@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 50px;
+}
+
+.App .title {
+  font-size: 5rem;
+  padding: 10px 20px 0px 20px;
+  background-color: rgb(11, 1, 58);
+  border-radius: 10px;
+  align-self: center;
+  color: #ff9900;
+  font-family: "Lucida Console", monospace;
+}

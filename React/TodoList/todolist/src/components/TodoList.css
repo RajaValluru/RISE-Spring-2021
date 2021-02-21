@@ -1,0 +1,109 @@
+.todo {
+    align-self: center;
+    color: white;
+  }
+  
+  .todo .taskEnter {
+    background: transparent;
+    border: none;
+    color: white;
+    border-bottom: 5px solid white;
+    min-width: 400px;
+    margin-top: 40px;
+    padding: 5px;
+    font-family: "Goudy Old Style", serif;
+    font-size: 1.5rem;
+  }
+  
+  .todo .taskEnter::placeholder {
+    color: white;
+    font-family: "Goudy Old Style", serif;
+    font-size: 1.3rem;
+  }
+  
+  .todo .taskEnter:focus {
+    outline: none;
+    border: 2px dotted black;
+  }
+  
+  .todo .add-btn {
+    
+    padding: 10px;
+    border-radius: 30%;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2rem;
+    background-color: rgb(255, 174, 0);
+    font-family: "Goudy Old Style", serif;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 3px solid black;
+  }
+  
+  .todo .add-btn:hover {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .todo ul li .update {
+    list-style: none;
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+    background-color: rgb(236, 236, 236, 0.6);
+    font-family: "Goudy Old Style", serif;
+    color: black;
+  }
+  
+  .todo ul li .crossText {
+    text-decoration: line-through;
+    list-style: none;
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+    background-color: rgb(236, 236, 236, 0.6);
+    font-family: "Goudy Old Style", serif;
+    color: rgb(11, 100, 23);
+  }
+  
+  .todo ul li .delete {
+    margin-top: 10px;
+    float: right;
+    padding: 4px 10px 4px 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+    font-family: "Goudy Old Style", serif;
+    color: white;
+  }
+  .todo ul li .delete:hover{
+  
+    font-size: 1.1rem;
+  }
+  .todo ul li .completed {
+    margin-top: 10px;
+    float: right;
+    padding: 4px 10px 4px 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: green;
+    font-family: "Goudy Old Style", serif;
+    margin-left: 10px;
+    color: white;
+  }
+  .todo ul li .completed:hover{
+    font-size: 1.1rem;
+  }
