@@ -4,10 +4,10 @@
   }
   
   .todo .taskEnter {
-    background: transparent;
+    background-color: rgba(0,0,0,0.4);
     border: none;
     color: white;
-    border-bottom: 5px solid white;
+    border-bottom: 5px solid rgba(255,255,255,0.35);
     min-width: 400px;
     margin-top: 40px;
     padding: 5px;
@@ -42,8 +42,7 @@
   }
   
   .todo .add-btn:hover {
-    padding: 15px;
-    font-size: 1.2rem;
+    background-color: rgba(255,174,0,0.9);
   }
   
   .todo ul li .update {
@@ -89,8 +88,7 @@
     color: white;
   }
   .todo ul li .delete:hover{
-  
-    font-size: 1.1rem;
+    background-color: rgba(255,0,0,0.8);
   }
   .todo ul li .completed {
     margin-top: 10px;
@@ -105,5 +103,5 @@
     color: white;
   }
   .todo ul li .completed:hover{
-    font-size: 1.1rem;
+    background-color: rgba(0,255,0,0.8);
   }
