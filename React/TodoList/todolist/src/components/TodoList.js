@@ -8,7 +8,7 @@ function TodoList() {
   const handleChange = (e) => {
     setTask(e.target.value);
   };
-
+  //Function for adding the task to the item list
   const addTask = () => {
     if (task !== "") {
       const taskDetails = {
@@ -20,7 +20,7 @@ function TodoList() {
       setTaskList([...tasklist, taskDetails]);
     }
   };
-
+  //Function for editing the task from item list 
   const updateTask = (e,id) => {
     e.preventDefault();
     //Finding element Index
@@ -37,12 +37,12 @@ function TodoList() {
     setTaskList(newTaskList);
 
   };
-
+//Function for deleting the task
   const deletetask = (e, id) => {
     e.preventDefault();
     setTaskList(tasklist.filter((t) => t.id != id));
   };
-
+  //Function for marking as complete
   const taskCompleted = (e, id) => {
     e.preventDefault();
     //Finding element Index
@@ -59,7 +59,7 @@ function TodoList() {
 
     setTaskList(newTaskList);
   };
-
+  
   return (
     <div className="todo">
       <input className="taskEnter"
@@ -77,6 +77,7 @@ function TodoList() {
         <ul>
           {tasklist.map((t) => (
             <li className={t.isCompleted ? "crossText" : "update"}>
+              
               <input className={t.isCompleted ? "crossText" : "update"} type="text" id={t.id} value={t.value} onChange={(e)=>{updateTask(e,t.id)}}/>
               <button
                 className="completed"
